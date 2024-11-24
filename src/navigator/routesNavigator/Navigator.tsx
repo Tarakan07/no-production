@@ -4,7 +4,7 @@ import { Platform } from 'react-native'
 import { ArrowBackSvg } from '../../assets/svgComp/navigator'
 import { routes } from '../../constants/routes'
 import BottomTabs from './BottomTabs'
-import DriverInner from '../../screens/Product'
+import Product from '../../screens/Product'
 import { HeaderTitle } from './components/helpers'
 const Stack = createStackNavigator()
 const animationEnabled = Platform.select({
@@ -60,7 +60,7 @@ function Navigator() {
       <Stack.Group>
         <Stack.Screen
           name={routes.PRODUCT}
-          component={DriverInner}
+          component={Product}
           options={({ route, navigation }) => ({
             headerTitle: () => (
               <HeaderTitle title={(route.params as any)?.title || ''} />

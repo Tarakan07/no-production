@@ -21,7 +21,7 @@ const BottomTabs = () => {
       })}
     >
       <Tab.Screen
-        name={routes.PRODUCT}
+        name={routes.ALL_PRODUCTS}
         component={AllProducts}
         options={{ title: 'Главная' }}
       />
